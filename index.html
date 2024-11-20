@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="gr__tradekeyindia_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scalw=1.0">
+<title>Online payment options - Web Key Network Pvt. Ltd.</title>
+<link href="./assets/bootsrtap.css" rel="stylesheet" type="text/css">
+<link href="https://www.webkeyindia.com/favicon.png" rel="shortcut icon" type="image/x-icon">
+<meta name="description" content="Online payment options - Web Key Network Pvt. Ltd.">
+<meta name="keywords" content="Online payment options - Web Key Network Pvt. Ltd.">
+<style>
+	.bg-black {
+    background: #c52d2f;
+		
+}
+	.btn-primary{background: #2B2B2B;}
+	.btn-primary:hover { background: #c52d2f; border:solid 1px #c52d2f;}
+	.bg-green {
+    background: #c52d2f;
+		background:url("assets/bg1.png") no-repeat; background-size:cover;  width:100%; height:100%;
+}
+</style>	
+<script language="JavaScript">
+function chkListKeyword(){	
+function trim(str){				
+	 return str.replace(/^\s*|\s*$/g,'');
+	} 	
+  if (trim(document.form1.productDescription.value)==''){
+   alert("Please Enter Order For ?");
+   document.form1.productDescription.focus();
+   return false;
+ }
+ if (trim(document.form1.amount.value)==''){
+   alert("Please Enter Amount");
+   document.form1.amount.focus();
+   return false;
+ }
+ if (trim(document.form1.billing_name.value)==''){
+  alert("Please Enter Your Name");
+  document.form1.billing_name.focus();
+  return false;
+ } 
+var email=trim(document.form1.billing_email.value);
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(email=='')
+  {
+	  alert('Please Enter Email Id');
+	  document.form1.billing_email.focus();
+	  return false;
+  }else if(!email.match(mailformat)){
+alert("You have entered an invalid email address!");
+document.form1.billing_email.focus();
+return false;
+}
+ if (trim(document.form1.comp_name.value)==''){
+ alert("Please Enter Your Comapny Name !");
+ document.form1.comp_name.focus();
+ return false;
+}
+if (trim(document.form1.billing_address.value)==''){
+ alert("Please Enter Your Address !");
+ document.form1.billing_address.focus();
+ return false;
+}	
+if (trim(document.form1.billing_city.value)==''){
+ alert("Please Enter Your City Name!");
+document.form1.billing_city.focus();
+return false;
+}
+if (trim(document.form1.billing_state.value)==''){
+alert("Please Enter Your State Name!");
+document.form1.billing_state.focus();
+return false;
+}
+if (trim(document.form1.billing_zip.value)==''){
+alert("Please Enter Your Pin/Zip Code!");
+document.form1.billing_zip.focus();
+return false;
+      }
+if(isNaN(document.form1.billing_zip.value)){
+	alert("Pin/Zip code should be no.!");
+	document.form1.billing_zip.focus();
+	return false;
+}	  
+if (document.form1.billing_country.selectedIndex==0){
+ alert("Please Select Your Country !");
+ document.form1.billing_country.focus();
+ return false;
+}
+
+if(trim(document.form1.billing_tel.value)==0){
+	alert("Enter your mobile no.!");
+	document.form1.billing_tel.focus();
+	return false;
+}
+
+if(isNaN(document.form1.billing_tel.value)){
+	alert("Mobile no. should be no.!");
+	document.form1.billing_tel.focus();
+	return false;
+}
+if(document.form1.billing_tel.value.length < 10){
+    alert("Mobile no. should be 10 digit long !");
+	document.form1.billing_tel.focus();
+	return false;
+}
+if(trim(document.form1.captcha.value)==''){
+    alert("Enter 4 digit security code !");
+	document.form1.captcha.focus();
+	return false;
+}
+  if(!document.form1.agree.checked){
+   alert("Please check the terms and conditions");
+	return false;
+}
+}
+function roundNumber(num, dec) {
+	var result = Math.round(num*Math.pow(10,dec))/Math.pow(10,dec);
+	return result;
+}
+function checkIt(evt){
+	evt = (evt) ? evt : window.event;
+	var charCode = (evt.which) ? evt.which : evt.keyCode;
+	if (charCode > 31 && (charCode < 45 || charCode > 57) && charCode != 47 ){
+			status = "This field accepts numbers only.";
+			return false;
+		}
+	status = "";
+	return true;
+}
+</script>
+</head>
+<body class="bg-green" data-gr-c-s-loaded="true">
+	<div style="box-shadow: 1px 1px 10px #000; width: 1000px; margin:auto">
+<header>
+<div class="container">
+<div class="row"> <img src="./assets/headere.jpg" class="img-responsive"> </div>
+</div></header>
+
+<div class="container bg-white">
+<div class="row">
+<div class="col-sm-12">
+<h3>Order Now</h3>
+<p class="bdr-bootom "></p>
+<p class="text-right"><small><i class="text-danger">Online Payment</i> » Order Now</small></p>
+</div>
+</div>
+</div>
+<div class="container bg-white">
+<div class="row">
+<form enctype="multipart/form-data" name="form1" method="post" action="#" onsubmit="return chkListKeyword()">
+<div class="container">
+<table class="table-condensed table table-bordered table-striped">
+<tbody><tr>
+<td colspan="2" class="bg-black"><strong class="clrwhite">Your Order Details</strong></td>
+</tr>
+<tr>
+<td width="33%"><p class="mlleft ">Order For <i class="text-danger">*</i></p></td>
+<td width="67%"><input name="productDescription" type="text" value="" id="productDescription" class="form-control"></td>
+</tr>
+<tr>
+<td><h5 class="mlleft">Order Price (INR) <i class="text-danger">*</i></h5></td>
+<td><input type="text" name="amount" id="amount" maxlength="10" value="" class="form-control"></td>
+</tr>
+<tr>
+<td colspan="2" class="bg-black"><strong class="clrwhite">Your Information</strong></td>
+</tr>
+	
+
+<tr>
+<td><h5 class="mlleft">Company Name <i class="text-danger">*</i></h5></td>
+<td><input name="comp_name" id="comp_name" value="" maxlength="100" type="text" class="form-control"></td>
+</tr>
+	<tr>
+<td><h5 class="mlleft">Mobile Number <i class="text-danger">*</i></h5></td>
+<td><input onkeypress="return isNumberKey(event)" name="billing_tel" id="billing_tel" value="" maxlength="15" type="text" class="form-control"></td>
+</tr>
+	<tr>
+<td><h5 class="mlleft">E-mail ID <i class="text-danger">*</i></h5></td>
+<td><input name="billing_email" id="billing_email" value="" maxlength="70" type="text" class="form-control"></td>
+</tr>
+	
+<tr>
+<td><h5 class="mlleft">Registered Office Address <i class="text-danger">*</i></h5></td>
+<td><input type="text" name="billing_address" id="billing_address" value="" maxlength="150" class="form-control"></td>
+</tr>
+	
+<tr>
+<td><h5 class="mlleft">Enter Security Code <i class="text-danger">*</i></h5></td>
+<td><input name="captcha" maxlength="4" id="security_code" class="form-control" onblur="return valid_captcha()" type="text"><span class="ml5px"><img src="./assets/amitabhcaptcha.php" class="vam" width="60" height="28" alt="Captcha"> </span> <span id="captcha_err" style="font:Arial, Helvetica, sans-serif; color:#FF0000;font-size:11px; font-weight:bold;"></span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><input name="agree" value="yes" type="checkbox">
+I agree to <a href="javascript:void(0);" onclick="PopupWindowCenter(&#39;https://www.webkeyindia.com/terms.php&#39;,&#39;Term and Condition&#39;,&#39;600&#39;,&#39;600&#39;)" title="Term and Condition"><b class="blue">terms and conditions</b></a></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="submit" name="submit" class="btn btn-primary btn-md" value="Click To Continue"></td>
+</tr>
+</tbody></table>
+</div>
+</form>
+<footer class="bg-black clearfix">
+<div class="col-sm-12 text-center"><small class="clrwhite"><a href="https://www.webkeyindia.com/" style="color:#FFF;">&copy; 2019 WebKeyIndia.Com. All Rights Reserved.</a></small>  </div>
+</footer>
+</div>
+</div>
+	</div>
+<script type="text/javascript" src="./assets/amicaptcha.js.download"></script>
+<script type="text/javascript">
+	function valid_captcha(){ 
+	 var captchavalu=document.form1.security_code.value;
+	 check_captcha(captchavalu);
+	}
+</script>
+
+<script language="javascript" type="text/javascript">
+function PopupWindowCenter(URL, title,w,h)
+{var left = (screen.width/2)-(w/2);
+var top = '20px';
+var newWin = window.open (URL, title, 'toolbar=no, location=no,directories=no, status=no, menubar=no, scrollbars=no, resizable=no,copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+}
+</script>
+<script type="text/javascript">
+    /* Modified to support Opera */
+    function bookmarksite(title, url) {
+      if (window.sidebar) // firefox
+      window.sidebar.addPanel(title, url, "");
+      else if (window.opera && window.print) { // opera
+        var elem = document.createElement('a');
+        elem.setAttribute('href', url);
+        elem.setAttribute('title', title);
+        elem.setAttribute('rel', 'sidebar');
+        elem.click();
+      } else if (document.all) // ie
+      window.external.AddFavorite(url, title);
+    }
+    </script>
+
+</body></html>
