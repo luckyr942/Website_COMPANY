@@ -1,0 +1,1 @@
+<?php  function query($pid){    $query = mysqli_query("select * from tbl_category where 1 and category_parent_id='$pid' and category_status='Active' order by category_order_by asc");	return $query;  }    function has_child($query){    $numRows = mysqli_num_rows($query);	if($numRows > 0){	return true;	}else{	return false;	}  }?>
